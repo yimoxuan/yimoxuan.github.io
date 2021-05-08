@@ -1,38 +1,20 @@
-## Welcome to GitHub Pages
+## Hall's Github
 
-You can use the [editor on GitHub](https://github.com/yimoxuan/yimoxuan.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+# 基本信息
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+专业：				计算机专业菜鸡一枚，本科某211，硕士某不入流985
 
-### Markdown
+擅长语言：	 目前主攻JAVA、但是实验室以Python为主，也写过一段时间的C++
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+项目经历：	 本科做过一些基础的不能再基础的研究，研究生做过一些体力活项目
+
+个人性格：	 相信每个人都是美好的（来自某性格测试的选择题），以诚待人
+
+
+
+### 其他
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+尚待补充
 ```
 ![](https://github-readme-stats.vercel.app/api?username=yimoxuan)
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yimoxuan/yimoxuan.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
