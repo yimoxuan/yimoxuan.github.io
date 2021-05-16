@@ -187,7 +187,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-16 20:22:03 / 修改时间：20:24:28" itemprop="dateCreated datePublished" datetime="2021-05-16T20:22:03+08:00">2021-05-16</time>
+              <time title="创建时间：2021-05-16 20:22:03 / 修改时间：20:25:56" itemprop="dateCreated datePublished" datetime="2021-05-16T20:22:03+08:00">2021-05-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
             </span>
 
           
@@ -261,7 +270,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-16 20:23:02" itemprop="dateModified" datetime="2021-05-16T20:23:02+08:00">2021-05-16</time>
+                <time title="修改时间：2021-05-16 20:25:29" itemprop="dateModified" datetime="2021-05-16T20:25:29+08:00">2021-05-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -284,35 +293,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>权限比较低，没有sudo权限，安装东西就很费劲，随便一搜全是sudo安装，下面方法不需要sudo。</p>
-<p><strong>更新：最终放弃此方法，npm install 一大堆错误，还是下载安装包吧。</strong></p>
-<ol>
-<li>下载nvm安装脚本：</li>
-</ol>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sL <span class="symbol">https:</span>/<span class="regexp">/raw.githubusercontent.com/creationix</span><span class="regexp">/nvm/v</span>0.<span class="number">31.0</span>/install.sh -o install_nvm.sh</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>执行安装脚本</li>
-</ol>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash install_nvm<span class="selector-class">.sh</span></span><br></pre></td></tr></table></figure>
-
-<p>完了记得<code>source ~/.profile</code>一下哦</p>
-<ol start="3">
-<li>使用nvm：</li>
-</ol>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">nvm ls-remote<span class="comment">//列出远程所有可用版本</span></span><br><span class="line">nvm install <span class="number">6.9</span><span class="number">.4</span><span class="comment">//目前稳定LTS版</span></span><br><span class="line">nvm ls <span class="comment">//查看已安装版本</span></span><br><span class="line">nvm use <span class="number">6.9</span><span class="number">.4</span><span class="comment">//切换到版本</span></span><br><span class="line"><span class="comment">//如果想把某个版本设为默认，可以这么做：</span></span><br><span class="line">nvm <span class="keyword">alias</span> <span class="literal">default</span> <span class="number">6.0</span><span class="number">.0</span></span><br><span class="line">nvm use <span class="literal">default</span></span><br></pre></td></tr></table></figure>
-
-<p>那这样当我们执行完npm i -g以后，安装到哪里去了呢？<br> 在这里：<code>~/.nvm/node_version/lib/node_modules/package_name</code></p>
-<p>最后，介绍个npm源管理工具nrm，我想还有一些童鞋不知道吧。我们大家已经习惯了使用cnpm，但是这个更好</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm i -g nrm</span><br><span class="line">nrm ls<span class="comment">//就可以列出所有可用源</span></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">  npm ---- https:<span class="comment">//registry.npmjs.org/</span></span><br><span class="line">  cnpm --- http:<span class="comment">//r.cnpmjs.org/</span></span><br><span class="line">* taobao - https:<span class="comment">//registry.npm.taobao.org/</span></span><br><span class="line">  nj ----- https:<span class="comment">//registry.nodejitsu.com/</span></span><br><span class="line">  rednpm - http:<span class="comment">//registry.mirror.cqupt.edu.cn/</span></span><br><span class="line">  npmMirror  https:<span class="comment">//skimdb.npmjs.com/registry/</span></span><br><span class="line">  edunpm - http:<span class="comment">//registry.enpmjs.org/</span></span><br></pre></td></tr></table></figure>
-
-<p>如上，使用<code>nrm use taobao</code>就可以欢快的<code>npm i</code>了，会自动使用淘宝源</p>
-<p>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dd1c92c764e0">https://www.jianshu.com/p/dd1c92c764e0</a></p>
-
+          <p><strong>更新：最终放弃此方法，npm install 一大堆错误，还是下载安装包吧。</strong></p>
+<p>权限比较低，没有sudo权限，安装东西就很费劲，随便一搜全是sudo安装，下面方法不需要sudo。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/05/15/ubuntu-%E4%BD%8E%E6%9D%83%E9%99%90%E5%AE%89%E8%A3%85npm/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
